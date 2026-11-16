@@ -1,0 +1,204 @@
+{
+  "version": 4,
+  "terraform_version": "1.9.8",
+  "serial": 51,
+  "lineage": "c83bfb8f-48a2-bf7e-0da0-fb2e44cb21f0",
+  "outputs": {
+    "subnet_id": {
+      "value": "ba6d7949-79c7-4b4d-b487-61187cfe0bdb",
+      "type": "string"
+    },
+    "vpc_id": {
+      "value": "4c5df45f-c249-441b-94b5-fa87e4acf995",
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "huaweicloud_networking_secgroup",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/huaweicloud/huaweicloud\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "created_at": "2026-09-15T09:37:05Z",
+            "delete_default_rules": null,
+            "description": "Security group for messaging API",
+            "enterprise_project_id": "0",
+            "id": "99b5c504-ba5d-4f6c-9a02-966c7a83b45b",
+            "name": "multichannel-messaging-sg",
+            "region": "cn-north-4",
+            "rules": [
+              {
+                "action": "allow",
+                "description": "",
+                "direction": "ingress",
+                "ethertype": "IPv4",
+                "id": "996b3cf5-c0f1-455c-b9a3-e32832a92616",
+                "port_range_max": 80,
+                "port_range_min": 80,
+                "ports": "80",
+                "priority": 1,
+                "protocol": "tcp",
+                "remote_address_group_id": "",
+                "remote_group_id": "",
+                "remote_ip_prefix": "0.0.0.0/0"
+              },
+              {
+                "action": "allow",
+                "description": "",
+                "direction": "ingress",
+                "ethertype": "IPv4",
+                "id": "4f5e11f7-9a6d-40de-9010-c523d5860957",
+                "port_range_max": 443,
+                "port_range_min": 443,
+                "ports": "443",
+                "priority": 1,
+                "protocol": "tcp",
+                "remote_address_group_id": "",
+                "remote_group_id": "",
+                "remote_ip_prefix": "0.0.0.0/0"
+              },
+              {
+                "action": "allow",
+                "description": "",
+                "direction": "egress",
+                "ethertype": "IPv6",
+                "id": "04c2e467-85fa-4890-a066-7763dea14e00",
+                "port_range_max": 0,
+                "port_range_min": 0,
+                "ports": "",
+                "priority": 100,
+                "protocol": "",
+                "remote_address_group_id": "",
+                "remote_group_id": "",
+                "remote_ip_prefix": ""
+              },
+              {
+                "action": "allow",
+                "description": "",
+                "direction": "egress",
+                "ethertype": "IPv4",
+                "id": "7c2f8dd6-f556-4877-b99d-32ada9c71287",
+                "port_range_max": 0,
+                "port_range_min": 0,
+                "ports": "",
+                "priority": 100,
+                "protocol": "",
+                "remote_address_group_id": "",
+                "remote_group_id": "",
+                "remote_ip_prefix": ""
+              },
+              {
+                "action": "allow",
+                "description": "",
+                "direction": "ingress",
+                "ethertype": "IPv6",
+                "id": "33e3d35d-c05e-4425-b42d-1b4e5021180b",
+                "port_range_max": 0,
+                "port_range_min": 0,
+                "ports": "",
+                "priority": 100,
+                "protocol": "",
+                "remote_address_group_id": "",
+                "remote_group_id": "99b5c504-ba5d-4f6c-9a02-966c7a83b45b",
+                "remote_ip_prefix": ""
+              },
+              {
+                "action": "allow",
+                "description": "",
+                "direction": "ingress",
+                "ethertype": "IPv4",
+                "id": "72ff63ad-de02-4224-b1e5-9cc219d85ece",
+                "port_range_max": 0,
+                "port_range_min": 0,
+                "ports": "",
+                "priority": 100,
+                "protocol": "",
+                "remote_address_group_id": "",
+                "remote_group_id": "99b5c504-ba5d-4f6c-9a02-966c7a83b45b",
+                "remote_ip_prefix": ""
+              }
+            ],
+            "tags": {},
+            "timeouts": null,
+            "updated_at": "2026-09-15T09:37:05Z"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiZGVsZXRlIjoxMjAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "huaweicloud_networking_secgroup_rule",
+      "name": "allow_http",
+      "provider": "provider[\"registry.terraform.io/huaweicloud/huaweicloud\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "action": "allow",
+            "description": "",
+            "direction": "ingress",
+            "ethertype": "IPv4",
+            "id": "996b3cf5-c0f1-455c-b9a3-e32832a92616",
+            "port_range_max": 80,
+            "port_range_min": 80,
+            "ports": "80",
+            "priority": 1,
+            "protocol": "tcp",
+            "region": "cn-north-4",
+            "remote_address_group_id": "",
+            "remote_group_id": "",
+            "remote_ip_prefix": "0.0.0.0/0",
+            "security_group_id": "99b5c504-ba5d-4f6c-9a02-966c7a83b45b",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiZGVsZXRlIjo2MDAwMDAwMDAwMDB9fQ==",
+          "dependencies": [
+            "huaweicloud_networking_secgroup.main"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "huaweicloud_networking_secgroup_rule",
+      "name": "allow_https",
+      "provider": "provider[\"registry.terraform.io/huaweicloud/huaweicloud\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "action": "allow",
+            "description": "",
+            "direction": "ingress",
+            "ethertype": "IPv4",
+            "id": "4f5e11f7-9a6d-40de-9010-c523d5860957",
+            "port_range_max": 443,
+            "port_range_min": 443,
+            "ports": "443",
+            "priority": 1,
+            "protocol": "tcp",
+            "region": "cn-north-4",
+            "remote_address_group_id": "",
+            "remote_group_id": "",
+            "remote_ip_prefix": "0.0.0.0/0",
+            "security_group_id": "99b5c504-ba5d-4f6c-9a02-966c7a83b45b",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiZGVsZXRlIjo2MDAwMDAwMDAwMDB9fQ==",
+          "dependencies": [
+            "huaweicloud_networking_secgroup.main"
+          ]
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}

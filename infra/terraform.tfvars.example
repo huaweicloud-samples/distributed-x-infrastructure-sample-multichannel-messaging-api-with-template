@@ -1,0 +1,14 @@
+# 华为云区域
+region = "cn-north-4"
+
+# 项目名称
+project_name = "multichannel-messaging"
+
+# JWT 密钥 (请替换为安全的随机字符串)
+jwt_secret = "your-secure-jwt-secret-here"
+
+# GeminiDB 密码
+geminidb_password = "your-geminidb-password"
+
+# SMTP 密码 (如使用邮件功能)
+smtp_password = "your-smtp-password"
